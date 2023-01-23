@@ -1,1 +1,1 @@
-web: gunicorn best-rest.wsgi
+web: gunicorn best_rest.wsgi
