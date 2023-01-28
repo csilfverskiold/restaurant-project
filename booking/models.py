@@ -7,6 +7,7 @@ SERVICE_CHOICES = (
     ('Dinner', 'Dinner'),
     )
 
+# Don't forget to edit appropriate times!
 TIME_CHOICES = (
     ('3 PM', '3 PM'),
     ('3:30 PM', '3:30 PM'),
