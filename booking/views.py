@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.views.generic.edit import CreateView
+from django.views import generic
 from .models import Reservation
 
 
@@ -13,3 +14,7 @@ class ReservationCreate(CreateView):  # Renders Reservation to create view
     model = Reservation
     fields = (['service', 'guest', 'day', 'time',
                'content', 'first_name', 'last_name', 'email'])
+
+
+class ReservationList(generic.ListView):
+    model = Reservation

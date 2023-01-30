@@ -5,4 +5,5 @@ urlpatterns = [
     path('', views.home, name='restaurant-home'),  # Home url
     path('booking/', views.ReservationCreate.as_view(),
          name='restaurant-booking'),  # Booking url
+    path('list/', views.ReservationList.as_view(), name='restaurant-list'),
 ]
