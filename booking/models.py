@@ -3,9 +3,6 @@ from datetime import datetime
 from django.contrib.auth.models import User
 # Import this later when needed- from cloudinary.models import CloudinaryField
 
-SERVICE_CHOICES = (
-    ('Dinner', 'Dinner'),
-    )
 
 # Don't forget to edit appropriate times!
 TIME_CHOICES = (
@@ -34,12 +31,10 @@ GUEST_CHOICES = (
 
 
 class Reservation (models.Model):
-    service = models.CharField(max_length=50,
-                               choices=SERVICE_CHOICES, default='Dinner')
     guest = models.CharField(max_length=10, choices=GUEST_CHOICES)
     day = models.DateField(default=datetime.now)
     time = models.CharField(max_length=10, choices=TIME_CHOICES)
-    content = models.TextField(max_length=500, default="")
+    content = models.TextField(max_length=500, default="", blank=True)
     first_name = models.CharField(max_length=100, default="")
     last_name = models.CharField(max_length=100, default="")
     email = models.EmailField(max_length=100, default="")
