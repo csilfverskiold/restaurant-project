@@ -16,7 +16,7 @@ class ReservationCreate(CreateView):  # Renders view to create a reservation
                'content', 'first_name', 'last_name', 'email'])
 
 
-class ReservationDetailView(DetailView):  # Renders view details of a reservation
+class ReservationDetailView(DetailView):  # Renders details of a reservation
     model = Reservation
 
     def get_context_data(self, *args, **kwargs):
@@ -29,8 +29,8 @@ class ReservationDetailView(DetailView):  # Renders view details of a reservatio
     # to template or add some extra field, context data can be overridden."
 
 
-class ReservationUpdate(UpdateView):  # Renders view to update a reservation
+class ReservationUpdateView(UpdateView):  # Renders update of a reservation
     model = Reservation
     fields = (['guest', 'day', 'time',
                'content', 'first_name', 'last_name'])
-    template_name_suffix = '_update_form'
+    success_url = "/"
