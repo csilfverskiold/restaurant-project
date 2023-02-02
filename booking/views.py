@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.views.generic.edit import CreateView, UpdateView
 from django.views.generic.detail import DetailView
+from django.urls import reverse
 from .models import Reservation
 
 
@@ -14,6 +15,9 @@ class ReservationCreate(CreateView):  # Renders view to create a reservation
     model = Reservation
     fields = (['guest', 'day', 'time',
                'content', 'first_name', 'last_name', 'email'])
+
+    def get_success_url(self):
+        return reverse('restaurant-detail', kwargs={'pk': self.object.pk})
 
 
 class ReservationDetailView(DetailView):  # Renders details of a reservation
