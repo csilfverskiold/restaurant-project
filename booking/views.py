@@ -8,7 +8,7 @@ from .models import Reservation
 
 # This function handles the traffic from the restaurant home page
 def home(request):
-    return HttpResponse('<h1>Restaurant Home</h1> <a href="https://8000-csilfverski-restaurantp-dv4iba0kkur.ws-eu84.gitpod.io/booking/">Reservation</a>')
+    return HttpResponse('<h1>Restaurant Home</h1>')
 
 
 class ReservationCreate(CreateView):  # Renders view to create a reservation

@@ -4,18 +4,17 @@ from django.contrib.auth.models import User
 # Import this later when needed- from cloudinary.models import CloudinaryField
 
 
-# Don't forget to edit appropriate times!
 TIME_CHOICES = (
-    ('3 PM', '3 PM'),
-    ('3:30 PM', '3:30 PM'),
-    ('4 PM', '4 PM'),
-    ('4:30 PM', '4:30 PM'),
     ('5 PM', '5 PM'),
     ('5:30 PM', '5:30 PM'),
     ('6 PM', '6 PM'),
     ('6:30 PM', '6:30 PM'),
     ('7 PM', '7 PM'),
     ('7:30 PM', '7:30 PM'),
+    ('8 PM', '8 PM'),
+    ('8:30 PM', '8:30 PM'),
+    ('9 PM', '9 PM'),
+    ('9:30 PM', '9:30 PM'),
 )
 
 GUEST_CHOICES = (
