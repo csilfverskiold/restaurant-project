@@ -3,6 +3,8 @@
 ## Current state of project
 This is a work in progress. The aim of the project is to create a landing page for a restaurant with user functionality to create a reservation. Included in the user functionality, the user will also be able to log in to view their created reservation details, as well as edit and delete their reservation. 
 
+The project can be found in its current state: [Here](https://best-rest.herokuapp.com/)
+
 ## User Stories
 - As a Site user I can view options to make a new reservation or manage an existing reservation so that I can choose where to navigate to on the website
 - As a Site user I can view contact information and the opening hours so that I know where the restaurant is and when it is open
