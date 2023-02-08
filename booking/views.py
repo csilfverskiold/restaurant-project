@@ -5,7 +5,7 @@ from django.views.generic.detail import DetailView
 from django.urls import reverse
 from .models import Reservation
 
-
+# Add a test comment
 # This function handles the traffic from the restaurant home page
 def home(request):
     return HttpResponse('<h1>Restaurant Home</h1>')
