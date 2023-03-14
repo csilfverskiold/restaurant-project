@@ -40,6 +40,6 @@ class Reservation (models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE,
                              null=True, blank=True)
 
-    def __str__(self):
+    def __str__(self):  # Returns a string representation of the object
         return f"""Name: {self.first_name} {self.last_name}
          | Guest: {self.guest} | Day: {self.day} | Time: {self.time}"""
