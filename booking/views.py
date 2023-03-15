@@ -14,7 +14,7 @@ def home(request):
 class ReservationCreate(CreateView):  # Renders view to create a reservation
     model = Reservation
     fields = (['guest', 'day', 'time',
-               'content', 'first_name', 'last_name', 'email'])
+               'comment', 'first_name', 'last_name', 'email'])
 
     def get_success_url(self):
         return reverse('restaurant-detail', kwargs={'pk': self.object.pk})
@@ -36,5 +36,5 @@ class ReservationDetailView(DetailView):  # Renders details of a reservation
 class ReservationUpdateView(UpdateView):  # Renders update of a reservation
     model = Reservation
     fields = (['guest', 'day', 'time',
-               'content', 'first_name', 'last_name'])
+               'comment', 'first_name', 'last_name'])
     success_url = "/"
