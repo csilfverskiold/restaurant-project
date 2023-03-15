@@ -1,17 +1,17 @@
 from django.shortcuts import render
-from django.http import HttpResponse
-from django.views.generic.edit import CreateView, UpdateView
-from django.views.generic.detail import DetailView
+from django.views import generic
 from django.urls import reverse
 from .models import Reservation
 
 
-# This function handles the traffic from the restaurant home page
-def home(request):
-    return HttpResponse('<h1>Restaurant Home</h1>')
+# This class handles the traffic from the restaurant home page
+class HomeView(generic.ListView):
+    model = Reservation
+    template_name = 'booking/index.html'
 
 
-class ReservationCreate(CreateView):  # Renders view to create a reservation
+# This class renders view to create a reservation
+class ReservationCreate(generic.CreateView):
     model = Reservation
     fields = (['guest', 'day', 'time',
                'comment', 'first_name', 'last_name', 'email'])
@@ -20,7 +20,8 @@ class ReservationCreate(CreateView):  # Renders view to create a reservation
         return reverse('restaurant-detail', kwargs={'pk': self.object.pk})
 
 
-class ReservationDetailView(DetailView):  # Renders details of a reservation
+# This class renders details of a reservation
+class ReservationDetailView(generic.DetailView):
     model = Reservation
 
     def get_context_data(self, *args, **kwargs):
@@ -33,7 +34,8 @@ class ReservationDetailView(DetailView):  # Renders details of a reservation
     # to template or add some extra field, context data can be overridden."
 
 
-class ReservationUpdateView(UpdateView):  # Renders update of a reservation
+# This class renders update of a reservation
+class ReservationUpdateView(generic.UpdateView):
     model = Reservation
     fields = (['guest', 'day', 'time',
                'comment', 'first_name', 'last_name'])
