@@ -33,7 +33,7 @@ class Reservation (models.Model):
     guest = models.CharField(max_length=10, choices=GUEST_CHOICES)
     day = models.DateField(default=datetime.now)
     time = models.CharField(max_length=10, choices=TIME_CHOICES)
-    comment = models.TextField(max_length=500, default="", blank=True)
+    comment = models.CharField(max_length=100, default="", blank=True)
     first_name = models.CharField(max_length=100, default="")
     last_name = models.CharField(max_length=100, default="")
     email = models.EmailField(max_length=100, default="")
