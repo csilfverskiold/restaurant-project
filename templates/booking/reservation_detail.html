@@ -1,10 +1,33 @@
-<h1>Number of guests: {{ object.guest }}</h1>
-<h1>Date: {{ object.day }}</h1>
-<h1>Time: {{ object.time }}</h1>
-<h1>Optional comment: {{ object.commment }}</h1>
-<h1>First name: {{ object.first_name }}</h1>
-<h1>Last name: {{ object.last_name }}</h1>
-<h1>Email address: {{ object.email }}</h1>
-<!-- Optional -->
-<!-- <p>Object description {{ object.description }}</p>
-<p>Category {{ category }}</p> -->
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<div class="container mt-5">
+    <div class="row">
+
+        <!-- This form sets basic template for Reservation model -->
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body text-center">
+                    <h2>Confirmation of reservation - Add Success alert message</h2>
+                    <p>Number of guests: {{ object.guest }}</p>
+                    <p>Date: {{ object.day }}</p>
+                    <p>Time: {{ object.time }}</p>
+                    <p>Optional comment: {{ object.commment }}</p>
+                    <p>First name: {{ object.first_name }}</p>
+                    <p>Last name: {{ object.last_name }}</p>
+                    <p>Email address: {{ object.email }}</p>
+                    <a href="{% url 'home' %}" class="btn btn-primary">Return to front page</a>
+                    <!-- Optional -->
+                    <!-- <p>Object description {{ object.description }}</p>
+                    <p>Category {{ category }}</p> -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+{%endblock%}

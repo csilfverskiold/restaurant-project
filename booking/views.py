@@ -24,6 +24,7 @@ class ReservationCreate(generic.CreateView):
 # This class renders details of a reservation
 class ReservationDetailView(generic.DetailView):
     model = Reservation
+    template_name = 'booking/reservation_detail.html'
 
     def get_context_data(self, *args, **kwargs):
         context = super(ReservationDetailView,
