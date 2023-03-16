@@ -1,19 +1,19 @@
 body {
     background-color: #405887;
+    font-family: 'Raleway', sans-serif;
 }
 
 .logo {
-    font-family: 'Raleway', sans-serif;
     font-size: 1.4rem;
-    font-weight: 700;
-    color: #ffffff;
+    font-weight: 500;
+    color: #000000;
     text-align: center;
 }
 
 .dark-bg {
     background-color: #5f6163;
 }
-
+/*
 .main-bg {
     background-color: #405887;
 }
@@ -29,7 +29,7 @@ body {
     left: -2px;
     background-color: #23BBBB;
 }
-/*
+
 .masthead {
     margin-top: 10px;
     overflow: hidden;

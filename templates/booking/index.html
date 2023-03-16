@@ -2,15 +2,24 @@
 
 {% block content %}
 
-<div class="container-fluid">
+<div class="container mt-5">
     <div class="row">
 
         <!-- Home page -->
-        <div class="col-12 mt-3 left">
-            <div class="row logo">
-                <h1>Restaurant Home</h1>
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body text-center">
+                <h1 class="card-title">Restaurant Home</h1>
+                <a href="{% url 'restaurant-booking' %}" class="btn btn-primary">Make a reservation</a>
+                <a href="#" class="btn btn-primary">Manage your reservation</a>
+                <p class="card-text">Vertical menu text</p>
+                <p class="card-text">Opening hours</p>
+                <p class="card-text">Contact information</p>
+                <p class="card-text">Social media icon links</p>
+                </div>
             </div>
         </div>
+
     </div>
 
 </div>
