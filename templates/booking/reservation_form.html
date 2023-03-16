@@ -1,6 +1,26 @@
-<!-- This form sets basic template for Reservation model -->
-<form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <input type="submit" value="Save">
-</form>
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<div class="container mt-5">
+    <div class="row">
+
+        <!-- This form sets basic template for Reservation model -->
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body text-center">
+                    <form method="post">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                        <input type="submit" value="Save">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+{%endblock%}

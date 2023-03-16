@@ -13,6 +13,7 @@ class HomeView(generic.ListView):
 # This class renders view to create a reservation
 class ReservationCreate(generic.CreateView):
     model = Reservation
+    template_name = 'booking/reservation_form.html'
     fields = (['guest', 'day', 'time',
                'comment', 'first_name', 'last_name', 'email'])
 

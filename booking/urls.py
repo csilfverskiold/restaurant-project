@@ -2,11 +2,15 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.HomeView.as_view(), name='home'),  # Home url
-    path('booking/', views.ReservationCreate.as_view(),  # Booking url
+    # Home url
+    path('', views.HomeView.as_view(), name='home'),
+    # Booking url
+    path('booking/', views.ReservationCreate.as_view(),
          name='restaurant-booking'),
-    path('booking/<pk>/', views.ReservationDetailView.as_view(),  # Detail url
+    # Detail url
+    path('booking/<pk>/', views.ReservationDetailView.as_view(),
          name='restaurant-detail'),
-    path('booking/<pk>/update', views.ReservationUpdateView.as_view(),  # Update url
+    # Update url
+    path('booking/<pk>/update', views.ReservationUpdateView.as_view(),
          name='restaurant-update'),
 ]
