@@ -23,7 +23,7 @@ class ReservationCreate(LoginRequiredMixin, generic.CreateView):
 
 
 # This class renders details of a reservation
-class ReservationDetailView(generic.DetailView):
+class ReservationDetailView(LoginRequiredMixin, generic.DetailView):
     model = Reservation
     template_name = 'booking/reservation_detail.html'
 
@@ -38,7 +38,7 @@ class ReservationDetailView(generic.DetailView):
 
 
 # This class renders update of a reservation
-class ReservationUpdateView(generic.UpdateView):
+class ReservationUpdateView(LoginRequiredMixin, generic.UpdateView):
     model = Reservation
     fields = (['guest', 'day', 'time',
                'comment', 'first_name', 'last_name'])

@@ -32,6 +32,7 @@
        {% else %}
          <li><a href="{% url 'login' %}?next={{ request.path }}">Login</a></li>
        {% endif %}
+       <a href="{% url 'home' %}" class="btn btn-primary">Restaurant Home</a>
     </ul>
     
     <!-- Main content -->
