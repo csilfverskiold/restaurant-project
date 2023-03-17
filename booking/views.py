@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.views import generic
 from django.urls import reverse
 from .models import Reservation
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 
 # This class handles the traffic from the restaurant home page
@@ -11,7 +12,7 @@ class HomeView(generic.ListView):
 
 
 # This class renders view to create a reservation
-class ReservationCreate(generic.CreateView):
+class ReservationCreate(LoginRequiredMixin, generic.CreateView):
     model = Reservation
     template_name = 'booking/reservation_form.html'
     fields = (['guest', 'day', 'time',
