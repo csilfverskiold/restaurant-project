@@ -43,7 +43,8 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
-    'booking',  # Added Django app name
+    'booking',  # Added Django app
+    'accounts',  # Added Django app
 ]
 
 MIDDLEWARE = [
