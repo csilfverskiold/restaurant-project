@@ -37,6 +37,12 @@ class ReservationDetailView(LoginRequiredMixin, generic.DetailView):
     # to template or add some extra field, context data can be overridden."
 
 
+# This class renders a list of reservations
+class ReservationListView(LoginRequiredMixin, generic.ListView):
+    model = Reservation
+    template_name = 'booking/reservation_list.html'
+
+
 # This class renders update of a reservation
 class ReservationUpdateView(LoginRequiredMixin, generic.UpdateView):
     model = Reservation

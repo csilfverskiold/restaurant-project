@@ -1,0 +1,18 @@
+<ul>
+  <!-- Iterate over object_list -->
+  {% for object in object_list %}
+  <!-- Display Objects -->
+  <li>Number of guests: {{ object.guest }}</li>
+  <li>Date: {{ object.day }}</li>
+  <li>Time: {{ object.time }}</li>
+  <li>Optional comment: {{ object.commment }}</li>
+  <li>First name: {{ object.first_name }}</li>
+  <li>Last name: {{ object.last_name }}</li>
+  <li></li>
+
+  <hr />
+  <!-- If object_list is empty  -->
+  {% empty %}
+  <li>No objects yet.</li>
+  {% endfor %}
+</ul>
