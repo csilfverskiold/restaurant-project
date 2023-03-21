@@ -42,6 +42,8 @@ class ReservationListView(LoginRequiredMixin, generic.ListView):
     model = Reservation
     template_name = 'booking/reservation_list.html'
 
+    # Add queryset
+
 
 # This class renders update of a reservation
 class ReservationUpdateView(LoginRequiredMixin, generic.UpdateView):
@@ -49,3 +51,10 @@ class ReservationUpdateView(LoginRequiredMixin, generic.UpdateView):
     fields = (['guest', 'day', 'time',
                'comment', 'first_name', 'last_name'])
     success_url = "/"
+
+
+# This class renders delete of a reservation
+class ReservationDeleteView(LoginRequiredMixin, generic.DeleteView):
+    model = Reservation
+    success_url = "/"
+    template_name = "booking/reservation_confirm_delete.html"

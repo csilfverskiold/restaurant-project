@@ -16,4 +16,7 @@ urlpatterns = [
     # Update url
     path('booking/<pk>/update', views.ReservationUpdateView.as_view(),
          name='restaurant-update'),
+    # Delete url
+    path('<pk>/delete/', views.ReservationDeleteView.as_view(),
+         name='restaurant-delete'),
 ]
