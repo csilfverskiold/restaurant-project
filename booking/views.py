@@ -48,6 +48,7 @@ class ReservationListView(LoginRequiredMixin, generic.ListView):
 # This class renders update of a reservation
 class ReservationUpdateView(LoginRequiredMixin, generic.UpdateView):
     model = Reservation
+    template_name = 'booking/reservation_update.html'
     fields = (['guest', 'day', 'time',
                'comment', 'first_name', 'last_name'])
     success_url = "/"
