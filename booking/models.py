@@ -5,15 +5,15 @@ from django.contrib.auth.models import User
 
 
 TIME_CHOICES = (
-    ('5 PM', '5 PM'),
+    ('5:00 PM', '5:00 PM'),
     ('5:30 PM', '5:30 PM'),
-    ('6 PM', '6 PM'),
+    ('6:00 PM', '6:00 PM'),
     ('6:30 PM', '6:30 PM'),
-    ('7 PM', '7 PM'),
+    ('7:00 PM', '7:00 PM'),
     ('7:30 PM', '7:30 PM'),
-    ('8 PM', '8 PM'),
+    ('8:00 PM', '8:00 PM'),
     ('8:30 PM', '8:30 PM'),
-    ('9 PM', '9 PM'),
+    ('9:00 PM', '9:00 PM'),
     ('9:30 PM', '9:30 PM'),
 )
 
@@ -33,7 +33,6 @@ class Reservation (models.Model):
     guest = models.CharField(max_length=10, choices=GUEST_CHOICES)
     day = models.DateField(default=datetime.now)
     time = models.CharField(max_length=10, choices=TIME_CHOICES)
-    comment = models.CharField(max_length=100, default="", blank=True)
     first_name = models.CharField(max_length=100, default="")
     last_name = models.CharField(max_length=100, default="")
     email = models.EmailField(max_length=100, default="")

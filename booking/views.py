@@ -15,8 +15,7 @@ class HomeView(generic.ListView):
 class ReservationCreate(LoginRequiredMixin, generic.CreateView):
     model = Reservation
     template_name = 'booking/reservation_form.html'
-    fields = (['guest', 'day', 'time',
-               'comment', 'first_name', 'last_name', 'email'])
+    fields = (['guest', 'day', 'time', 'first_name', 'last_name', 'email'])
 
     def get_success_url(self):
         return reverse('restaurant-detail', kwargs={'pk': self.object.pk})
@@ -57,8 +56,7 @@ class ReservationListView(LoginRequiredMixin, generic.ListView):
 class ReservationUpdateView(LoginRequiredMixin, generic.UpdateView):
     model = Reservation
     template_name = 'booking/reservation_update.html'
-    fields = (['guest', 'day', 'time',
-               'comment', 'first_name', 'last_name'])
+    fields = (['guest', 'day', 'time', 'first_name', 'last_name'])
     success_url = "/"
 
 

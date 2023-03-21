@@ -13,7 +13,6 @@ The project can be found in its current state: [Here](https://best-rest.herokuap
 - As a Site user I can view the options for the number of people to reserve for so that I can select the amount of people in my party
 - As a Site user I can view a calendar of available dates so that I can select which date to make a reservation
 - As a Site user I can view a list of available times on available dates so that I can select what time to make a reservation
-- As a Site user I can add a comment to my reservation so that I can communicate anything specific in my reservation
 - As a Site user I can register a first name, last name and an email address so that I can make a reservation
 - As a Site user I can enter an email address so that I can manage my existing reservation
 - As a Site admin I can create, read, update and delete reservations so that I can manage guest reservations
