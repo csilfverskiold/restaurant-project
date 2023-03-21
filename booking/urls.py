@@ -11,7 +11,7 @@ urlpatterns = [
     path('booking/<pk>/', views.ReservationDetailView.as_view(),
          name='restaurant-detail'),
     # List url
-    path('booking/list/<pk>/', views.ReservationListView.as_view(),
+    path('booking/list/', views.ReservationListView.as_view(),
          name='restaurant-list'),
     # Update url
     path('<pk>/update', views.ReservationUpdateView.as_view(),

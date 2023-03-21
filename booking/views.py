@@ -21,6 +21,12 @@ class ReservationCreate(LoginRequiredMixin, generic.CreateView):
     def get_success_url(self):
         return reverse('restaurant-detail', kwargs={'pk': self.object.pk})
 
+    def form_valid(self, form):
+        reservation = form.save(commit=False)
+        reservation.user = self.request.user
+        reservation.save()
+        return super().form_valid(form)
+
 
 # This class renders details of a reservation
 class ReservationDetailView(LoginRequiredMixin, generic.DetailView):
@@ -42,7 +48,9 @@ class ReservationListView(LoginRequiredMixin, generic.ListView):
     model = Reservation
     template_name = 'booking/reservation_list.html'
 
-    # Add queryset
+    def get_queryset(self):
+        logged_user = self.request.user
+        return Reservation.objects.filter(user=logged_user)
 
 
 # This class renders update of a reservation
