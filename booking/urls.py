@@ -7,12 +7,12 @@ urlpatterns = [
     # Booking url
     path('booking/', views.ReservationCreate.as_view(),
          name='restaurant-booking'),
-    # Detail url
-    path('booking/<pk>/', views.ReservationDetailView.as_view(),
-         name='restaurant-detail'),
     # List url
     path('booking/list/', views.ReservationListView.as_view(),
          name='restaurant-list'),
+    # Detail url
+    path('booking/<pk>/', views.ReservationDetailView.as_view(),
+         name='restaurant-detail'),
     # Update url
     path('<pk>/update', views.ReservationUpdateView.as_view(),
          name='restaurant-update'),
