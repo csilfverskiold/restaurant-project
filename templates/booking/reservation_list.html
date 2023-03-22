@@ -21,7 +21,7 @@
                       <li>Time: {{ object.time }}</li>
                       <li>First name: {{ object.first_name }}</li>
                       <li>Last name: {{ object.last_name }}</li>
-                      <a href="{% url 'home' %}" class="btn btn-warning">Edit reservation</a>
+                      <a href="{% url 'restaurant-update' object.id %}" class="btn btn-warning">Edit reservation</a>
                       <hr />
                       <!-- If object_list is empty  -->
                       {% empty %}
