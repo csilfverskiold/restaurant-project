@@ -1,6 +1,19 @@
+/* Body */
 body {
-    background-color: #405887;
-    font-family: 'Raleway', sans-serif;
+background-image: url("https://res.cloudinary.com/dgvnrwkpg/image/upload/v1679491627/pexels-guilherme-rossi-1819669_1200_ggz3yb.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
+background-color: #111111;
+font-family: 'Raleway', sans-serif;
+}
+
+/* Status - Login / Logout */
+.list {
+    list-style-type: none;
+    color: #db4949;
+    padding-left: 20px;
 }
 
 .logo {

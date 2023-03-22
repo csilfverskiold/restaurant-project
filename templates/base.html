@@ -20,13 +20,10 @@
 
 </head>
 
-<body class="d-flex flex-column h-100 main-bg">
-
-    <!-- Navigation -->
-
+<body class="d-flex flex-column h-100">
 
     <!-- Log in/out status -->
-    <ul>
+    <ul class="list">
        {% if user.is_authenticated %}
          <li>User: {{ user.get_username }}</li>
          <li><a href="{% url 'logout' %}?next={{ request.path }}">Logout</a></li>
