@@ -16,6 +16,14 @@ font-family: 'Raleway', sans-serif;
     padding-left: 20px;
 }
 
+.content-bg {
+    background-color: rgba(20, 20, 20, 0.6);
+    border: none;
+    border-radius: 0;
+    color: #ffffff;
+}
+
+
 .logo {
     font-size: 1.4rem;
     font-weight: 500;
