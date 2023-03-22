@@ -57,11 +57,11 @@ class ReservationUpdateView(LoginRequiredMixin, generic.UpdateView):
     model = Reservation
     template_name = 'booking/reservation_update.html'
     fields = (['guest', 'day', 'time', 'first_name', 'last_name'])
-    success_url = "/"
+    success_url = "/booking/list/"
 
 
 # This class renders delete of a reservation
 class ReservationDeleteView(LoginRequiredMixin, generic.DeleteView):
     model = Reservation
-    success_url = "/"
     template_name = "booking/reservation_confirm_delete.html"
+    success_url = "/booking/list/"
