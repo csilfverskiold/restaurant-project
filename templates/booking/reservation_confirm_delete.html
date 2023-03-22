@@ -2,12 +2,25 @@
 
 {% block content %}
 
-<form method="post">
-  {% csrf_token %}
+<div class="container mt-5">
+  <div class="row">
 
-  <p>Are you sure you want to delete "{{ object }}"?</p>
-
-  <input type="submit" value="Confirm" />
-</form>
+      <!-- This form sets basic template for Reservation model -->
+      <div class="col-12">
+          <div class="card">
+              <div class="card-body text-center">
+                <form method="post">
+                  {% csrf_token %}
+                
+                  <p>Are you sure you want to delete "{{ object }}"?</p>
+                
+                  <input type="submit" value="Confirm" />
+                </form>
+              </div>
+          </div>
+      </div>
+      
+  </div>
+</div>
 
 {% endblock %}
