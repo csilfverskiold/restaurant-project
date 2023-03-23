@@ -3,18 +3,40 @@
 {% block content %}
 
 <!-- Home page -->
-<div class="container mt-5">
+<div class="container-md">
     <div class="row">
         <div class="col-12">
             <div class="card content-bg">
                 <div class="card-body text-center">
-                <h1 class="card-title">Restaurant Home</h1>
-                <a href="{% url 'signup' %}" class="btn btn-primary">Register an account to make a reservation</a>
-                <a href="{% url 'restaurant-booking' %}" class="btn btn-primary">Sign in and make a reservation</a>
-                <a href="{% url 'restaurant-list' %}" class="btn btn-primary">Manage your reservation</a>
-                <p class="card-text">Vertical menu text</p>
-                <p class="card-text">Opening hours</p>
-                <p class="card-text">Contact information</p>
+                <h1 class="card-title logo">Skafferiet</h1>
+                <a href="{% url 'signup' %}" class="btn btn-dark">Register an account</a>
+                <a href="{% url 'restaurant-booking' %}" class="btn btn-dark">Make a reservation</a>
+                <a href="{% url 'restaurant-list' %}" class="btn btn-dark">Manage your reservation</a>
+                <h3 class="card-text heading">Menu</h3>
+                <h5 class="underline">Snacks</h5>
+                <p>Oysters, horseradish cream, dill & cucumber 95:-</p>
+                <p>Seafood corndog, pickled ginger, misomayo 95:-</p>
+                <p>Bread, whipped honey butter, lavender 75:-</p>
+                <h5 class="underline">Starters</h5>
+                <p>Pickled herring from Norröna, fried Jansson with Västerbotten cheese, hazelnuts, browned butter and dill 185:-</p>
+                <p>Beef tartare with pickled green tomato and tabasco, cream cheese mayo, spring onion capers and grilled waffle 215:-</p>
+                <p>Toasted croissant with stewed corn, smoked duck liver, plum chutney, licorice and maple syrup 225:-</p>
+                <h5 class="underline">Main dishes</h5>
+                <p>Pork sausage with chili cheese arancini, roasted paprika, apricot, lemongrass and chorizo foam 285:-</p>
+                <p>Venison loin with spring onion, artichoke, cheese croquette, blackcurrant leaves & green pepper sauce 325:-</p>
+                <p>Sole and clam with fried raw crab, sugar snap peas, elderberry butter sauce, yuzu & jalapeno 325:-</p>
+                <p>Yellow pea falafel with miso-roasted eggplant, macadamia nut, ras el hanout, coriander & dried feta cheese 275:-</p>
+                <h5 class="underline">Desserts</h5>
+                <p>Pear sorbet with buttermilk ice cream, salt-roasted almonds and tonka 125:-</p>
+                <p>Granny's freshly baked sponge cake for two with lightly whipped punsch cream, rose and raspberry 155:-</p>
+                <p>Chocolate tartelette with citrus mousse, salt-roasted pumpkin caramel, bergamot and pink pepper 165:-</p>
+                <h5 class="card-text heading underline">Opening hours</h5>
+                <p class="no-margin">Tuesday - Saturday</p>
+                <p>17:00 - Late</p>
+                <h5 class="card-text heading underline">Contact information</h5>
+                <p class="no-margin">Kungstensgatan 9 114 25 Stockholm</p>
+                <p class="no-margin">+46 8-55 81 88</p>
+                <p>info@skafferiet.se</p>
                 <p class="card-text">Social media icon links</p>
                 </div>
             </div>

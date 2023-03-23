@@ -1,39 +1,73 @@
-/* Body */
+/* --------------------------------------------------------------------------- Body */
 body {
-background-image: url("https://res.cloudinary.com/dgvnrwkpg/image/upload/v1679491627/pexels-guilherme-rossi-1819669_1200_ggz3yb.jpg");
-background-size: cover;
-background-repeat: no-repeat;
-background-attachment: fixed;
-background-position: center;
-background-color: #111111;
-font-family: 'Raleway', sans-serif;
+    background-image: url("https://res.cloudinary.com/dgvnrwkpg/image/upload/v1679551548/best-rest_v6xtzl.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: #111111;
+    font-family: 'Cutive Mono', monospace;
+    font-size: 1.2rem;
 }
 
-/* Status - Login / Logout */
+/* ---------------------------------------------------------- Status - Login / Logout */
 .list {
     list-style-type: none;
     color: #db4949;
     padding-left: 20px;
 }
 
+/* ---------------------------------------------- Container / Content Opaque Background */
+.container-md {
+    max-width: 720px;
+}
+
 .content-bg {
-    background-color: rgba(20, 20, 20, 0.6);
+    background-color: rgba(20, 20, 20, 0.7);
     border: none;
     border-radius: 0;
     color: #ffffff;
+    margin-bottom: 15px;
 }
 
 
+/* ----------------------------------------------------------------------------- Buttons */
+.btn-dark {
+    margin: 7px;
+    color: #ffffff;
+    background-color: #1f1f1f;
+    border-color: #d8b352;
+    font-size: 1.2rem;
+}
+
+
+/* ------------------------------------------------------------- Headings and paragraphs */
+.heading {
+    margin-top: 0.5rem;
+}
+
+.underline {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+}
+
+.no-margin {
+    margin-bottom: 0;
+}
+
+/* -------------------------------------------------------------------------------- Logo */
 .logo {
-    font-size: 1.4rem;
-    font-weight: 500;
-    color: #000000;
+    font-size: 2.7rem;
+    color: #ffffff;
     text-align: center;
 }
+
+/* ------------------------------------------------------------------------------ Footer */
 
 .dark-bg {
     background-color: #5f6163;
 }
+
 /*
 .main-bg {
     background-color: #405887;
