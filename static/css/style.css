@@ -65,7 +65,11 @@ body {
 /* ------------------------------------------------------------------------------ Footer */
 
 .dark-bg {
-    background-color: #5f6163;
+    background-color: rgba(20, 20, 20, 0.7);
+}
+
+.social-links {
+    color: #ffffff;
 }
 
 /*
