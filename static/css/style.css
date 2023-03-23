@@ -10,11 +10,51 @@ body {
     font-size: 1.2rem;
 }
 
+/* --------------------------------------------------------------------------- Navbar */
+.navbar-bg {
+    background-color: rgba(20, 20, 20, 0.7);
+    border: none;
+    border-radius: 0;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.brand {
+    font-size: 2.3rem;
+    color: #ffffff;
+}
+
+.navbar-border-toggler {
+    border-color: rgba(255, 255, 255, 0.7)!important;
+}
+
+.toggler-bg {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 15%;
+}
+
 /* ---------------------------------------------------------- Status - Login / Logout */
-.list {
+.login-status {
     list-style-type: none;
-    color: #db4949;
-    padding-left: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    padding-left: 0;
+}
+
+.login-status>li {
+    display: inline;
+}
+
+.list {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.btn-login-out {
+    color: #ffffff;
+    background-color: #1f1f1f;
+    border-color: #d8b352;
+    font-size: 1.2rem;
 }
 
 /* ---------------------------------------------- Container / Content Opaque Background */
@@ -56,11 +96,11 @@ body {
 }
 
 /* -------------------------------------------------------------------------------- Logo */
-.logo {
+/*.logo {
     font-size: 2.7rem;
     color: #ffffff;
     text-align: center;
-}
+}*/
 
 /* ------------------------------------------------------------------------------ Footer */
 
@@ -71,6 +111,12 @@ body {
 .social-links {
     color: #ffffff;
 }
+
+
+@media (min-width: 992px) {
+    
+}
+
 
 /*
 .main-bg {

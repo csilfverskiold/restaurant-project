@@ -3,12 +3,13 @@
 {% block content %}
 
 <!-- Home page -->
+<!-- Register account / Make or manage reservation / Menu / Open hours / Contact info  -->
+
 <div class="container-md">
     <div class="row">
         <div class="col-12">
             <div class="card content-bg">
                 <div class="card-body text-center">
-                <h1 class="card-title logo">Skafferiet</h1>
                 <a href="{% url 'signup' %}" class="btn btn-dark">Register an account</a>
                 <a href="{% url 'restaurant-booking' %}" class="btn btn-dark">Make a reservation</a>
                 <a href="{% url 'restaurant-list' %}" class="btn btn-dark">Manage your reservation</a>
@@ -30,14 +31,14 @@
                 <p>Pear sorbet with buttermilk ice cream, salt-roasted almonds and tonka 125:-</p>
                 <p>Granny's freshly baked sponge cake for two with lightly whipped punsch cream, rose and raspberry 155:-</p>
                 <p>Chocolate tartelette with citrus mousse, salt-roasted pumpkin caramel, bergamot and pink pepper 165:-</p>
-                <h5 class="card-text heading underline">Opening hours</h5>
+                <h5 class="card-text heading underline">Open hours</h5>
                 <p class="no-margin">Tuesday - Saturday</p>
                 <p>17:00 - Late</p>
                 <h5 class="card-text heading underline">Contact information</h5>
-                <p class="no-margin">Kungstensgatan 9 114 25 Stockholm</p>
+                <p class="no-margin">Kungstensgatan 9</p>
+                <p class="no-margin">114 25 Stockholm</p>
                 <p class="no-margin">+46 8-55 81 88</p>
                 <p>info@skafferiet.se</p>
-                <p class="card-text">Social media icon links</p>
                 </div>
             </div>
         </div>
