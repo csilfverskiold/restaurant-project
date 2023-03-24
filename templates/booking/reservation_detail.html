@@ -2,7 +2,11 @@
 
 {% block content %}
 
-<!-- This form sets basic template for Reservation model -->
+<!-- Reservation confirmation page -->
+<!-- Confirmation of users reservation content -->
+<!-- Based on ReservationDetailView -->
+<!-- Code content inspired by and altered for use in this project: 
+     https://www.geeksforgeeks.org/detailview-class-based-views-django/  -->
 
 <div class="container-md">
     <div class="row">
@@ -19,13 +23,11 @@
                     <p>Email address: {{ object.email }}</p>
                     <br>
                     <a href="{% url 'restaurant-update' object.id %}" class="btn btn-gold-form">Edit reservation</a>
-                    <a href="{% url 'home' %}" class="btn btn-dark">Return to front page</a>
+                    <a href="{% url 'home' %}" class="btn btn-dark-form">Return to front page</a>
                 </div>
             </div>
         </div>
-
     </div>
-
 </div>
 
 {%endblock%}

@@ -35,7 +35,7 @@ body {
 
 /* ---------------------------------------------------------- Status - Login / Logout */
 .login-status {
-    list-style-type: none;
+    list-style-type: none; /* Code credit: https://www.tutorialspoint.com/How-to-create-an-unordered-list-without-bullets-in-HTML */ 
     color: #ffffff;
     text-decoration: none;
     padding-left: 0;
@@ -126,12 +126,6 @@ td>input {
     width: 150px; 
   }
 
-/* -------------------------------------------------------------------------------- Logo */
-/*.logo {
-    font-size: 2.7rem;
-    color: #ffffff;
-    text-align: center;
-}*/
 
 /* ------------------------------------------------------------------------------ Footer */
 
@@ -171,55 +165,3 @@ td>input {
     }
     
 }
-
-
-/*
-.main-bg {
-    background-color: #405887;
-}
-
-.image-container {
-    position: relative;
-}
-
-.image-flash {
-    position: absolute;
-    bottom: 5%;
-    min-width: 30%;
-    left: -2px;
-    background-color: #23BBBB;
-}
-
-.masthead {
-    margin-top: 10px;
-    overflow: hidden;
-    position: relative;
-    display: inline-block;
-    height: 33vh;
-    width: 100%;
-}
-
-.masthead-text {
-    background-color: #445261;
-    color: white;
-    position: relative;
-}
-
-.masthead-image {
-    position: relative;
-    overflow: hidden;
-}
-
-.masthead-image:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 90%;
-    height: 100%;
-    width: 150%;
-    background: #445261;
-    -webkit-transform: skew(15deg);
-    -moz-transform: skew(15deg);
-    transform: skew(15deg);
-    z-index: 100;
-}*/

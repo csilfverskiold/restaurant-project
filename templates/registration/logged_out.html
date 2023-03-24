@@ -2,6 +2,11 @@
 
 {% block content %}
 
+<!-- Logout page -->
+<!-- Logout message when logged out -->
+<!-- Code content inspired by and altered for use in this project: 
+     https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Authentication  -->
+
 <div class="container-md">
   <div class="row">
       <div class="col-12">
@@ -9,6 +14,7 @@
               <div class="card-body">
                 <p>Logged out!</p>
                 <a href="{% url 'login' %}" class="btn btn-dark-form">Click here to login again.</a>
+                <a href="{% url 'home' %}" class="btn btn-dark-form">Return to front page</a>
               </div>
           </div>
       </div>

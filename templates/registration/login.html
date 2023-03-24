@@ -2,6 +2,12 @@
 
 {% block content %}
 
+<!-- Login page -->
+<!-- Login with user credentials content / Redirect button to register account  -->
+<!-- Code content inspired by and altered for use in this project: 
+     https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Authentication  -->
+
+
 <div class="container-md">
   <div class="row">
       <div class="col-12">
@@ -16,7 +22,7 @@
                   <p>Your account doesn't have access to this page. To proceed,
                   please login with an account that has access.</p>
                 {% else %}
-                  <p>Please login to make a reservation.</p>
+                  <p>Please login</p>
                 {% endif %}
               {% endif %}
               
@@ -40,9 +46,6 @@
                 <p>Don't have an account yet?</p>
                 <a href="{% url 'signup' %}" class="btn btn-dark-form">Register an account</a>
               </div>
-            
-              <!-- {# Assumes you setup the password_reset view in your URLconf #}
-              <p><a href="{% url 'password_reset' %}">Lost password?</a></p> -->
               </div>
           </div>
       </div>

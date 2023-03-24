@@ -24,7 +24,10 @@
 
 <body class="d-flex flex-column h-100">
 
+    <!-- Base template -->
     <!-- Navbar / Log in/out status / Social media links -->
+    <!-- Code content inspired by and altered for use in this project: 
+     https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Authentication  -->
 
     <nav class="navbar navbar-expand-lg navbar-light navbar-bg">
         <div class="container navbar-max-width">
@@ -39,7 +42,7 @@
                 <ul class="login-status">
                     {% if user.is_authenticated %}
                         <li>User: {{ user.get_username }}</li>
-                        <li><a class="list btn btn-login-out" href="{% url 'logout' %}?next={{ request.path }}">Logout</a></li>
+                        <li><a class="list btn btn-login-out" href="{% url 'logout' %}">Logout</a></li>
                     {% else %}
                         <li><a class="list btn btn-login-out" href="{% url 'login' %}?next={{ request.path }}">Login</a></li>
                     {% endif %}
