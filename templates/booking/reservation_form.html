@@ -2,17 +2,18 @@
 
 {% block content %}
 
-
-<div class="container mt-5">
+<!-- This form sets basic template for Reservation model -->
+<div class="container-md">
     <div class="row">
-
-        <!-- This form sets basic template for Reservation model -->
         <div class="col-12">
-            <div class="card">
-                <div class="card-body text-center">
+            <div class="card content-bg">
+                <div class="card-body">
+                    <h5 class="text-center">Enter details for your reservation</h5>
+                    <br>
                     <form method="post">
                         {% csrf_token %}
                         {{ form.as_p }}
+                        <br>
                         <input type="submit" value="Save">
                     </form>
                 </div>
