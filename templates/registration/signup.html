@@ -20,13 +20,13 @@
                 <form method="post">
                   {% csrf_token %}
                   {{ form.as_p }}
-                  <button type="submit">Sign Up</button>
-                  <a href="{% url 'home' %}" class="btn btn-dark-form">Back</a>
+                  <button type="submit" class="btn btn-dark">Sign Up</button>
+                  <a href="{% url 'home' %}" class="btn btn-dark">Back</a>
                 </form>
                 <br>
                 <div>
                 <p>Already have an account?</p>
-                <a href="{% url 'login' %}" class="btn btn-dark-form">Login</a>
+                <a href="{% url 'login' %}" class="btn btn-dark">Login</a>
               </div>
           </div>
       </div>

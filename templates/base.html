@@ -42,9 +42,9 @@
                 <ul class="login-status">
                     {% if user.is_authenticated %}
                         <li>User: {{ user.get_username }}</li>
-                        <li><a class="list btn btn-login-out" href="{% url 'logout' %}">Logout</a></li>
+                        <li><a class="list btn btn-dark" href="{% url 'logout' %}">Logout</a></li>
                     {% else %}
-                        <li><a class="list btn btn-login-out" href="{% url 'login' %}?next={{ request.path }}">Login</a></li>
+                        <li><a class="list btn btn-dark" href="{% url 'login' %}?next={{ request.path }}">Login</a></li>
                     {% endif %}
                 </ul>
        
