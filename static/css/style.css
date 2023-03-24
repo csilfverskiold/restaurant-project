@@ -143,11 +143,33 @@ td>input {
     color: #ffffff;
 }
 
+/* ------------------------------------------------------------------------ Media queries */
 
 @media (min-width: 440px) {
     td>input {
         width: fit-content; 
       }
+}
+
+@media (min-width: 768px) {
+    .navbar-max-width {
+        max-width: 720px;
+      }
+    
+    .brand {
+        font-size: 2.6rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .no-flex-grow {
+        flex-grow: 0;
+      }
+    
+    .brand {
+        font-size: 3rem;
+    }
+    
 }
 
 
