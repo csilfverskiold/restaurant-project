@@ -19,7 +19,7 @@
                         {% csrf_token %}
                         {{ form.as_p }}
                         <br>
-                        <input type="submit" value="Save changes">
+                        <input type="submit" value="Save changes" class="btn btn-dark">
                     </form>
                     <br>
                     <a href="{% url 'restaurant-delete' object.id %}" class="btn btn-burgundy-form">Delete reservation</a>
