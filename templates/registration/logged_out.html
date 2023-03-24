@@ -1,6 +1,17 @@
 {% extends "base.html" %}
 
 {% block content %}
-  <p>Logged out!</p>
-  <a href="{% url 'login'%}">Click here to login again.</a>
+
+<div class="container-md">
+  <div class="row">
+      <div class="col-12">
+          <div class="card content-bg">
+              <div class="card-body">
+                <p>Logged out!</p>
+                <a href="{% url 'login' %}" class="btn btn-dark-form">Click here to login again.</a>
+              </div>
+          </div>
+      </div>
+  </div>
+
 {% endblock %}
