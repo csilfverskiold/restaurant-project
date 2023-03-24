@@ -104,6 +104,11 @@ body {
     margin-bottom: 0;
 }
 
+/* ------------------------------------------------------------------------- Input field */
+td>input {
+    width: 150px; 
+  }
+
 /* -------------------------------------------------------------------------------- Logo */
 /*.logo {
     font-size: 2.7rem;
@@ -122,8 +127,10 @@ body {
 }
 
 
-@media (min-width: 992px) {
-    
+@media (min-width: 440px) {
+    td>input {
+        width: fit-content; 
+      }
 }
 
 

@@ -2,10 +2,10 @@
 
 {% block content %}
 
-<div class="container mt-5">
+<div class="container-md">
   <div class="row">
       <div class="col-12">
-          <div class="card">
+          <div class="card content-bg">
               <div class="card-body">
                 {% if form.errors %}
                 <p>Your username and password didn't match. Please try again.</p>
@@ -19,7 +19,7 @@
                   <p>Please login to make a reservation.</p>
                 {% endif %}
               {% endif %}
-            
+              
               <form method="post" action="{% url 'login' %}">
                 {% csrf_token %}
                 <table>
@@ -32,13 +32,13 @@
                     <td>{{ form.password }}</td>
                   </tr>
                 </table>
-                <input type="submit" value="login">
+                <input type="submit" value="Login">
                 <input type="hidden" name="next" value="{{ next }}">
               </form>
               <br>
               <div>
                 <p>Don't have an account yet?</p>
-                <a href="{% url 'signup' %}" class="btn btn-primary">Register an account</a>
+                <a href="{% url 'signup' %}" class="btn btn-dark-form">Register an account</a>
               </div>
             
               <!-- {# Assumes you setup the password_reset view in your URLconf #}
