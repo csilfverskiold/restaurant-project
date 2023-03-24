@@ -1,8 +1,9 @@
 from django.db import models
 from datetime import datetime
 from django.contrib.auth.models import User
-# Import this later when needed- from cloudinary.models import CloudinaryField
 
+# Code content inspired by and altered for use in this project:
+# https://blog.devgenius.io/django-tutorial-on-how-to-create-a-booking-system-for-a-health-clinic-9b1920fc2b78
 
 TIME_CHOICES = (
     ('5:00 PM', '5:00 PM'),
@@ -26,7 +27,7 @@ GUEST_CHOICES = (
 )
 
 
-# Model for making reservations, CRUD functionality included.
+# Model for making reservations, CRUD functionality included
 
 
 class Reservation (models.Model):

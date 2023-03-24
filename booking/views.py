@@ -5,7 +5,20 @@ from .models import Reservation
 from django.contrib.auth.mixins import LoginRequiredMixin
 
 
-# This class handles the traffic from the restaurant home page
+# Code content inspired by and altered for use in this project:
+# CreateView:
+# https://www.geeksforgeeks.org/createview-class-based-views-django/
+# DetailView:
+# https://www.geeksforgeeks.org/detailview-class-based-views-django/
+# ListView:
+# https://www.geeksforgeeks.org/listview-class-based-views-django/
+# UpdateView:
+# https://www.geeksforgeeks.org/updateview-class-based-views-django/?ref=rp
+# DeleteView:
+# https://www.geeksforgeeks.org/deleteview-class-based-views-django/
+
+
+# This class the restaurant home page
 class HomeView(generic.ListView):
     model = Reservation
     template_name = 'booking/index.html'
@@ -37,9 +50,6 @@ class ReservationDetailView(LoginRequiredMixin, generic.DetailView):
                         self).get_context_data(*args, **kwargs)
         context["category"] = "MISC"
         return context
-    # "By default DetailView will only display fields of a table.
-    # If one wants to modify this context data before sending it
-    # to template or add some extra field, context data can be overridden."
 
 
 # This class renders a list of reservations
