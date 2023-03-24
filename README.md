@@ -24,8 +24,9 @@ The restaurants website targets curious people seeking to enjoy modern cuisine p
 5. [Manual Testing](#manual-testing)
 6. [Deployment](#deployment)
 7. [References](#references)
-    - [Code content](#code-content)
+    - [Code Content](#code-content)
     - [Media](#media)
+    - [Design Tools](#design-tools)
     - [Acknowledgements](#acknowledgements)
 
 # UX-Design
@@ -129,10 +130,50 @@ During the planning stage of this project, I also sketched an ERD (Entity Relati
 
 <img src="assets/images/erd.png" alt="ERD planning stage">
 
-
-
 # Features
 # Technologies
 # Manual Testing
 # Deployment
 # References
+Below are links to references I have used as inspiration or altered for use in my project. They have also been placed appropriately in the code. 
+## Code Content
+- [Useful tutorial to better understand Django Framework](https://www.youtube.com/playlist?list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p)
+- [Another useful tutorial playlist](https://www.youtube.com/playlist?list=PLOLrQ9Pn6cawJ9CbY-o_kQC4GOWfhCFHq )
+- [Django user authentication and permissions](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Authentication)
+- [Generic list and detail views](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Generic_views#book_detail_page)
+- [Django user sign up tutorial](https://learndjango.com/tutorials/django-signup-tutorial )
+- [Appointment code snippet](https://blog.devgenius.io/django-tutorial-on-how-to-create-a-booking-system-for-a-health-clinic-9b1920fc2b78)
+- [Adding CreateView](https://www.geeksforgeeks.org/createview-class-based-views-django/)
+- [Adding ListView](https://www.geeksforgeeks.org/listview-class-based-views-django/)
+- [Adding DetailView](https://www.geeksforgeeks.org/detailview-class-based-views-django/)
+- [Adding UpdateView](https://www.geeksforgeeks.org/updateview-class-based-views-django/?ref=rp)
+- [Adding DeleteView](https://www.geeksforgeeks.org/deleteview-class-based-views-django/)
+- [Python “line too long” fix](https://stackoverflow.com/questions/14143284/line-is-too-long-django-pep8)
+- [Remove list bullets](https://www.tutorialspoint.com/How-to-create-an-unordered-list-without-bullets-in-HTML)
+## Media
+- [Cloudinary Image Hosting](https://cloudinary.com/)
+- [Google Fonts – Cutive Mono 400](https://fonts.google.com/)
+- [Font Awesome](https://fontawesome.com/)
+- [Amiresponsive](https://ui.dev/amiresponsive)
+- [Unsplash - Background image](https://unsplash.com/photos/xhKG01FN2uk)
+- [Favicon generator](https://realfavicongenerator.net/favicon_result?file_id=p1gs1e33dd9re15vc1k9n3og1ui86#.ZBlQhnbMKUk)
+- [Favicon fork and spoon](https://favpng.com/png_view/knife-knife-fork-symbol-spoon-cutlery-png/yPQ2qmw4)
+## Design inspiration
+- [Lilla Ego](https://www.lillaego.com/)
+- [Animo](https://www.animorestaurant.se/)
+- [Främmat](https://frammat.com/)
+- [Ett Bageri](https://www.ettbageri.se/)
+- [Oaxen Slip](https://oaxen.com/en/bistro-oaxen-slip/)
+## Design Tools
+- [Figma](https://www.figma.com/)
+- [Lucidchart](https://bit.ly/3nidrjl)
+## Validation Tools
+- [Python validator](https://pep8ci.herokuapp.com/)
+- [HTML validator](https://validator.w3.org/#validate_by_inpu)
+- [CSS validator](https://jigsaw.w3.org/css-validator/)
+## Other
+- [What is Django? (in README.md description)](https://python.plainenglish.io/the-mvt-design-pattern-of-django-8fd47c61f582)
+- [Blog walkthrough LMS]( https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FST101+2021_T1/courseware/b31493372e764469823578613d11036b/fe4299adcd6743328183aab4e7ec5d13/)
+- [README.md on LMS](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+IDE101+20/courseware/536d98fd22554d0198eb7c94e10b63fb/f19e9eaf1133492c9377344e7bfe0f00/3?activate_block_id=block-v1%3ACodeInstitute%2BIDE101%2B20%2Btype%40html%2Bblock%4095d3a88ee4f244b29a916c3b2315a6ba)
+## Acknowledgements
+- Mentors, tutors and students at Code Institute
