@@ -2,21 +2,24 @@
 
 {% block content %}
 
+<!-- This form sets basic template for Reservation model -->
 
-<div class="container mt-5">
+<div class="container-md">
     <div class="row">
-
-        <!-- This form sets basic template for Reservation model -->
         <div class="col-12">
-            <div class="card">
-                <div class="card-body text-center">
+            <div class="card content-bg">
+                <div class="card-body">
+                    <h2 class="text-center">Edit your reservation</h2>
+                    <br>
                     <form method="post">
                         {% csrf_token %}
                         {{ form.as_p }}
-                        <input type="submit" value="Save">
+                        <br>
+                        <input type="submit" value="Save changes">
                     </form>
                     <br>
-                    <a href="{% url 'restaurant-delete' object.id %}" class="btn btn-danger">Delete reservation</a>
+                    <a href="{% url 'restaurant-delete' object.id %}" class="btn btn-burgundy-form">Delete reservation</a>
+                    <a href="{% url 'restaurant-list' %}" class="btn btn-dark-form">Back</a>
                 </div>
             </div>
         </div>
