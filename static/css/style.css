@@ -89,6 +89,15 @@ body {
     font-size: 1.2rem;
 }
 
+.btn-gold-form {
+    margin: 7px;
+    margin-left: 0;
+    color: #ffffff;
+    background-color: #d8b352;
+    border-color: #1f1f1f;
+    font-size: 1.2rem;
+}
+
 
 /* ------------------------------------------------------------- Headings and paragraphs */
 .heading {
