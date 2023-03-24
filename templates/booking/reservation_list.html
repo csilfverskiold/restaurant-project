@@ -2,33 +2,32 @@
 
 {% block content %}
 
+<!-- This form sets basic template for Reservation model -->
 
-<div class="container mt-5">
+<div class="container-md">
     <div class="row">
-
-        <!-- This form sets basic template for Reservation model -->
         <div class="col-12">
-            <div class="card">
+            <div class="card content-bg">
                 <div class="card-body">
-                    <h2>Your reservations</h2>
+                    <h2 class="text-center">Your reservations</h2>
                     <ul>
                       <!-- Iterate over object_list -->
                       {% for object in object_list %}
                       <!-- Display Objects -->
-                      <li>Booking id: {{ object.id }}</li>
+                      <li>Booking number: {{ object.id }}</li>
                       <li>Number of guests: {{ object.guest }}</li>
                       <li>Date: {{ object.day }}</li>
                       <li>Time: {{ object.time }}</li>
                       <li>First name: {{ object.first_name }}</li>
                       <li>Last name: {{ object.last_name }}</li>
-                      <a href="{% url 'restaurant-update' object.id %}" class="btn btn-warning">Edit reservation</a>
+                      <a href="{% url 'restaurant-update' object.id %}" class="btn btn-gold-form">Edit reservation</a>
                       <hr />
                       <!-- If object_list is empty  -->
                       {% empty %}
                       <li>No reservations yet.</li>
                       {% endfor %}
                     </ul>
-                    <a href="{% url 'home' %}" class="btn btn-primary">Return to front page</a>
+                    <a href="{% url 'home' %}" class="btn btn-dark">Return to front page</a>
                 </div>
             </div>
         </div>
