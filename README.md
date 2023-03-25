@@ -20,7 +20,10 @@ The restaurants website targets curious people seeking to enjoy modern cuisine p
     - [ERD](#erd)
 3. [Features](#features)
     - [Existing Features](#existing-features)
-4. [Technologies](#technologies)
+4. [Technologies Used](#technologies-used)
+    - [Languages](#languages)
+    - [Frameworks, Libraries and Programs](#frameworks-libraries-and-programs)
+    - [Tools](#tools)
 5. [Manual Testing](#manual-testing)
     - [Bugs](#bugs)
 6. [Deployment](#deployment)
@@ -65,8 +68,6 @@ As a site user:
         - As a **Site user** I can **enter a date** so that **I can select which date to make a reservation** 
     - Available times:
         - As a **Site user** I can **view a list of available times on available dates** so that **I can select what time to make a reservation** 
-    - Add comment:
-        - As a **Site user** I can **add a comment to my reservation** so that **I can communicate anything specific in my reservation** 
     - Add name and email:
         - As a **Site user** I can **register a first name, last name and an email address** so that **I can make a reservation** 
 - Authentication and managing a reservation 
@@ -221,7 +222,36 @@ In this section there is a description of each feature the user would experience
 
 <img src="assets/images/admin_panel.png" alt="Admin panel page">
 
-# Technologies
+# Technologies Used
+## Languages
+- HTML
+- CSS
+- Python
+## Frameworks, Libraries and Programs
+- [Django](https://www.djangoproject.com/)
+    - Django was used to build the models, forms and views of the app, and was the backbone of this project.
+- [Bootstrap v5.1](https://getbootstrap.com/docs/5.1/getting-started/introduction/)
+    - Bootstrap was used to implement the responsiveness of the site, using bootstrap classes.
+- [Cloudinary](https://cloudinary.com/)
+    - Cloudinary was used as free cloud storage for the background image.
+- [Google Fonts](https://fonts.google.com/)
+    - Google fonts were used to import the font "Cutive Mono 400". This font was used throughout the entire project.
+- [Font Awesome](https://fontawesome.com/)
+    - Font Awesome was used on all pages throughout the website to import icons (social media icons).
+- [Git](https://git-scm.com/)
+    - Git was used for version control by utilizing the GitPod terminal to commit to Git and push to GitHub.
+- [GitHub](https://github.com/)
+    - GitHub was used to store the project after pushing.
+- [Figma](https://www.figma.com/)
+    - A design tool used to sketch out a wireframe of the websites design. 
+- [Lucidchart](https://bit.ly/3nidrjl)
+    - A diagram tool used to create a visual sketch of the database model in this project. 
+- [Amiresponsive](https://ui.dev/amiresponsive)
+    - Am I Responsive was used to see responsive design throughout the process and to generate mockup imagery to be used. 
+
+
+
+
 # Manual Testing
 ## Bugs
 # Deployment
@@ -264,8 +294,10 @@ Below are links to references I have used as inspiration or altered for use in m
 - [HTML validator](https://validator.w3.org/#validate_by_inpu)
 - [CSS validator](https://jigsaw.w3.org/css-validator/)
 ## Other
-- [What is Django? (in README.md description)](https://python.plainenglish.io/the-mvt-design-pattern-of-django-8fd47c61f582)
+- [What is Django?](https://python.plainenglish.io/the-mvt-design-pattern-of-django-8fd47c61f582) (In README.md description)
 - [Blog walkthrough LMS]( https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FST101+2021_T1/courseware/b31493372e764469823578613d11036b/fe4299adcd6743328183aab4e7ec5d13/)
 - [README.md on LMS](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+IDE101+20/courseware/536d98fd22554d0198eb7c94e10b63fb/f19e9eaf1133492c9377344e7bfe0f00/3?activate_block_id=block-v1%3ACodeInstitute%2BIDE101%2B20%2Btype%40html%2Bblock%4095d3a88ee4f244b29a916c3b2315a6ba)
+- [Kat632](https://github.com/Kat632/PP4-LettuceEat#Technologies-Used) and [aleksandracodes](https://github.com/aleksandracodes/CI_PP4_Workout_Planner#technologies-used)
+    - For structure of Technologies Used in README.md
 ## Acknowledgements
 - Mentors, tutors and students at Code Institute
