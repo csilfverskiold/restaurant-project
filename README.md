@@ -6,6 +6,8 @@ Skafferiet is a local (not real) restaurant, based in central Stockholm, Sweden.
 
 The restaurants website targets curious people seeking to enjoy modern cuisine presented in a fun and simple but elegant manner in an vibrant environment. 
 
+The live site can be found here: [Skafferiet](https://best-rest.herokuapp.com/)
+
 <img src="assets/images/responsive_units.png" alt="ERD planning stage">
 
 # Table of contents
@@ -79,7 +81,7 @@ As a site user:
         - As a **Site user** I can **enter user details** so that **I can create a reservation or read, update or delete my existing reservation** 
 - Additional information
     - View menu:
-        - As a **Site user** I can **view the restaurant’s menu** so that **I know what they are currently offering
+        - As a **Site user** I can **view the restaurant’s menu** so that **I know what they are currently offering**
     - View contact information:
         - As a **Site user** I can **view contact information and the opening hours** so that **I know where the restaurant is and when it is open**
     - View social media:
@@ -255,14 +257,140 @@ In this section there is a description of each feature the user would experience
 
 # Manual Testing
 ## Responsiveness
+This project was built according to the Mobile First concept, primarily built for small screens first and adapted for larger after. Manual testing was conducted for responsiveness on small, medium and large screens. Elements in all pages respond as inteded on all devices. 
+
 ## Browser Compability Testing
+I have tested that this website works as intended in browsers: 
+- Chrome
+- Firefox
+- Edge
+
 ## Lighthouse Testing
+### Accessibility
+- I confirmed that the colors and fonts chosen are easy to read and accessible by running it through Lighthouse in Chrome DevTools.
+
+<img src="assets/images/lighthouse.png" alt="Admin panel page">
+
 ## Code Validation
-## User Stories Testing
+The following validators were used to validate the code used in this project: 
+- [HTML validator](https://validator.w3.org/#validate_by_inpu) for HTML
+- [CSS validator](https://jigsaw.w3.org/css-validator/) for CSS
+- [CI PEP8 Python Linter](https://pep8ci.herokuapp.com/) for Python
+
+### Results
+HTML Pages - Code Validation
+- 2 errors found
+    - Sign up page: Errors in Django built in sign up **form** when converted to HTML. 
+    - Reservation list page: Error thrown; anchor and horizontal rule tags not allowed as children of unordered list element in this context.
+- All else clear. 
+
+CSS stylesheet - Code Validation
+- All clear, no errors. Validated as CSS level 3 + SVG. 
+
+Python Files - Code Validation
+- Errors in settings.py 5 x “line too long”.
+- All else clear. 
+
+
+
+
+
+
+## User Stories Testing***
+
+### As a site user: 
+
+- View site navigation:
+    - As a **Site user** I can **view options to make a new reservation or manage an existing reservation** so that **I can choose where to navigate to on the website** 
+        - There are two (of three) main navigational buttons clearly and immediately presented to the user on the home page, taking them to the desired direction. 
+- Create reservation: 
+    - As a **logged in Site user** I can **create a reservation** so that **I have a reserved time and date at the restaurant** 
+        - The user will find the button taking them to make a complete reservation on the home page. 
+- Party number: 
+    - As a **Site user** I can **view the options for the number of people to reserve for** so that **I can select the amount of people in my party**
+        - This feature is implemented in the form a user has to enter when making a reservation. 
+- Enter date:
+    - As a **Site user** I can **enter a date** so that **I can select which date to make a reservation** 
+        - This feature is implemented in the form a user has to enter when making a reservation. 
+- Available times:
+    - As a **Site user** I can **view a list of available times on available dates** so that **I can select what time to make a reservation**
+     - This feature is implemented in the form a user has to enter when making a reservation. 
+- Add name and email:
+    - As a **Site user** I can **register a first name, last name and an email address** so that **I can make a reservation** 
+        - This feature is implemented in the form a user has to enter when making a reservation. 
+- Register account:
+    - As a **Site user** I can **register an account** so that **I can create a reservation**
+        - There is one (of three) main navigational buttons clearly and immediately presented to the user on the home page, taking them to the desired direction. There, they can register an account. 
+- View reservations: 
+    - As a **logged in Site user** I can **view a list of my reservations** so that **I can decide which reservation to manage** 
+        - There is one (of three) main navigational buttons clearly and immediately presented to the user on the home page, taking them to the desired direction. When clicking 'Manage your reservation', the user is presented with a list of the reseration/s they have made. An edit button is provided at each reservation. 
+- Manage reservation:
+    - As a **Site user** I can **enter user details** so that **I can create a reservation or read, update or delete my existing reservation** 
+        - When logged in, the user has access to all pages; 'Make a reservation' and 'Manage your reservation'. Here, they can create, read, update and delete their reservation/s. 
+- View menu:
+    - As a **Site user** I can **view the restaurant’s menu** so that **I know what they are currently offering**
+        - This feature is clearly displayed on the Home Page and accessed by simply scrolling down when entering the site. 
+- View contact information:
+    - As a **Site user** I can **view contact information and the opening hours** so that **I know where the restaurant is and when it is open**
+        - This feature is displayed towards the bottom of the Home Page, below the menu, accessed by simply scrolling down when entering the site.
+- View social media:
+    - As a **Site user** I can **view social media links** so that **I can open external links to the restaurant’s social media accounts**
+        - This feature is displayed in the Footer of the site. There, the user can click on the icons opening the restaurants social media accounts in a new page.  
+### As a site admin: 
+ - Manage guest reservation:
+    - As a **Site admin** I can **create, read, update and delete guest reservations** so that **I can manage guest reservations** 
+        - This feature is accessed via the Django admin panel and requires login credentials. Once logged in, the admin can create, read, update and delete all guest reservations. 
 ## Features Testing
-## Responsiveness
+### Common Elements Testing
+Manual testing was conducted on the following elements that appear on every page:
+- Test that Logo redirects to home screen.
+- Test that Navbar hamburger toggle works.
+- Test that Navbar login/out button works.
+- Test that Social Links in Footer work and open in a new page.
+- Test that buttons styles respond consistently.
+### Home Page
+Manual testing was conducted on the following elements of the Home Page: 
+- Test that Register an account button redirects user to correct page
+- Test that Make a reservation button redirects user to correct page
+- Test that Manage your reservation button redirects user to correct page
+### Register an account Page
+Manual testing was conducted on the following elements of the Register an account Page:
+- Test form entries are registered in the database. 
+- Test redirection when clicking 'Sign up' responds correctly.
+### Make a reservation Page
+Manual testing was conducted on the following elements of the Make a reservation Page:
+- Test that user is checked to be authourized access if logged in. If not, ask user to log in. 
+- Test form entries are registered in the database. 
+- Test that confirmation reservation details are correct. 
+### Manage your reservation Page
+Manual testing was conducted on the following elements of the Manage your reservation Page:
+- Test that user is checked to be authourized access if logged in. If not, ask user to log in. 
+- Test that list presented is correct by currently logged in user. 
+### Edit reservation Page
+Manual testing was conducted on the following elements of the Edit reservation Page:
+- Test that reservation presented is correct by id and made by currently logged in user. 
+- Test form is correctly prepopulated with original details. 
+- Test updated form entries are registered in the database. 
+- Test redirection button click responds correctly.
+### Delete reservation Page
+Manual testing was conducted on the following elements of the Delete reservation Page:
+- Test that reservation presented is correct by id and made by currently logged in user. 
+- Test that confirmation delete details are correct. 
+- Test redirection button click responds correctly.
+### Login/out Pages
+Manual testing was conducted on the following elements of the Login/out Pages:
+- Test logged in/out status changes accordingly. 
+- Test buttons redirect properly.
+- Test that logout confirmation works. 
 ## Bugs
 ### Resolved and Unresolved
+#### Resolved
+- When trying to get a list of reservations created by the currently logged in user to display, an error message was received: “Field ‘id’ expected a number but got ‘list’”. 
+    - **FIX:** Move url path of DetailView below ListView. The issue was due to url order when Django does its pattern matching.
+- When trying to access a currently logged in users reservation, an error was received: “NoReverseMatch at <url_path>”. 
+    - **FIX:** Pass argument of object.id in the template url to match the request in the url path.  
+#### Unresolved
+- No unresolved bugs. 
 
 
 
@@ -311,7 +439,9 @@ There is always room for improvement in mostly anything. I could point out reaso
 - Customize forms
     - To further enhance the UX of the forms, add custom more CSS to them. 
 - Hide register account button
-    - Hide register account if logged in. 
+    - Hide register account if logged in.
+- Validation errors
+    - Adress HTML validation errors
 
 
 # References
@@ -356,6 +486,6 @@ Below are links to references I have used as inspiration or altered for use in m
 - [Blog walkthrough LMS]( https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FST101+2021_T1/courseware/b31493372e764469823578613d11036b/fe4299adcd6743328183aab4e7ec5d13/)
 - [README.md on LMS](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+IDE101+20/courseware/536d98fd22554d0198eb7c94e10b63fb/f19e9eaf1133492c9377344e7bfe0f00/3?activate_block_id=block-v1%3ACodeInstitute%2BIDE101%2B20%2Btype%40html%2Bblock%4095d3a88ee4f244b29a916c3b2315a6ba)
 - [Kat632](https://github.com/Kat632/PP4-LettuceEat#Technologies-Used) and [aleksandracodes](https://github.com/aleksandracodes/CI_PP4_Workout_Planner#technologies-used)
-    - For structure of Technologies Used in README.md
+    - For inspiration when structuring sections Technologies Used and Manual Testing in README.md
 ## Acknowledgements
 - Mentors, tutors and students at Code Institute
