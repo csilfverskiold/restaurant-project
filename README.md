@@ -242,6 +242,8 @@ In this section there is a description of each feature the user would experience
     - Git was used for version control by utilizing the GitPod terminal to commit to Git and push to GitHub.
 - [GitHub](https://github.com/)
     - GitHub was used to store the project after pushing.
+- [PostgreSQL](https://www.elephantsql.com/) 
+    - Deployed project on ElephantSQL uses a PostgreSQL database
 - [Figma](https://www.figma.com/)
     - A design tool used to sketch out a wireframe of the websites design. 
 - [Lucidchart](https://bit.ly/3nidrjl)
@@ -251,11 +253,39 @@ In this section there is a description of each feature the user would experience
 
 
 
-
 # Manual Testing
 ## Bugs
+
+
+
 # Deployment
+This project was deployed through Heroku using the following steps:
+#### **Creating Heroku App**
++ Log into Heroku
++ Select 'Create New App' from your dashboard
++ Choose an app name (if there has been an app made with that name, you will be informed and will need to choose an alternative)
++ Select the appropriate region based on your location
++ Click 'Create App'
+
+**Connecting to GitHub**
++ From the dashboard, click the 'Deploy' tab towards the top of the screen
++ From here, locate 'Deployment Method' and choose 'GitHub'
++ From the search bar newly appeared, locate your repository by name
++ When you have located the correct repository, click 'Connect'
+
+**Environment Variables**
++ Click the 'Settings' tab towards the top of the page
++ Locate the 'Config Vars' and click 'Reveal Config Vars'
++ Add the variables needed
++ Go back to 'Deploy' tab, locate 'Manual deploy' towards the bottom of the page
++ Click 'Deploy Branch' and wait until build finished
++ Locate and click 'Open app' in top of the app dashboard
+
+
 # Future Improvements
+
+
+
 # References
 Below are links to references I have used as inspiration or altered for use in my project. They have also been placed appropriately in the code. 
 ## Code Content
