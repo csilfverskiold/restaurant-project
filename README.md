@@ -8,7 +8,7 @@ The restaurants website targets curious people seeking to enjoy modern cuisine p
 
 The live site can be found here: [Skafferiet](https://best-rest.herokuapp.com/)
 
-<img src="assets/images/responsive_units.png" alt="ERD planning stage">
+<img src="assets/images/responsive_units.png" alt="responsive units">
 
 # Table of contents
 1. [UX-Design](#ux-design)
@@ -27,6 +27,12 @@ The live site can be found here: [Skafferiet](https://best-rest.herokuapp.com/)
     - [Frameworks, Libraries and Programs](#frameworks-libraries-and-programs)
     - [Tools](#tools)
 5. [Manual Testing](#manual-testing)
+    - [Responsiveness](#responsiveness)
+    - [Browser Compability Testing](#browser-compability-testing)
+    - [Lighthouse Testing](#lighthouse-testing)
+    - [Code Validation](#code-validation)
+    - [User Stories Testing](#user-stories-testing)
+    - [Features Testing](#features-testing)
     - [Bugs](#bugs)
 6. [Deployment](#deployment)
 7. [Future Improvements](#future-improvements)
@@ -253,8 +259,6 @@ In this section there is a description of each feature the user would experience
 - [Amiresponsive](https://ui.dev/amiresponsive)
     - Am I Responsive was used to see responsive design throughout the process and to generate mockup imagery to be used. 
 
-
-
 # Manual Testing
 ## Responsiveness
 This project was built according to the Mobile First concept, primarily built for small screens first and adapted for larger after. Manual testing was conducted for responsiveness on small, medium and large screens. Elements in all pages respond as inteded on all devices. 
@@ -290,16 +294,8 @@ CSS stylesheet - Code Validation
 Python Files - Code Validation
 - Errors in settings.py 5 x “line too long”.
 - All else clear. 
-
-
-
-
-
-
-## User Stories Testing***
-
+## User Stories Testing
 ### As a site user: 
-
 - View site navigation:
     - As a **Site user** I can **view options to make a new reservation or manage an existing reservation** so that **I can choose where to navigate to on the website** 
         - There are two (of three) main navigational buttons clearly and immediately presented to the user on the home page, taking them to the desired direction. 
@@ -391,8 +387,6 @@ Manual testing was conducted on the following elements of the Login/out Pages:
     - **FIX:** Pass argument of object.id in the template url to match the request in the url path.  
 #### Unresolved
 - No unresolved bugs. 
-
-
 
 # Deployment
 This project was deployed through Heroku using the following steps:
