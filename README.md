@@ -52,7 +52,7 @@ Examining the answers of these questions, I could follow up with a final questio
 By posing these three important questions, I could now base my user stories on the answers.
 
 ### User stories
-Below are the user stories in their epics created for this project. 
+Below are the user stories in their epics created for this project. They have been implemented and worked with in GitHub Project connected to this projects repository.
 
 As a site user: 
 
@@ -254,7 +254,15 @@ In this section there is a description of each feature the user would experience
 
 
 # Manual Testing
+## Responsiveness
+## Browser Compability Testing
+## Lighthouse Testing
+## Code Validation
+## User Stories Testing
+## Features Testing
+## Responsiveness
 ## Bugs
+### Resolved and Unresolved
 
 
 
@@ -283,7 +291,27 @@ This project was deployed through Heroku using the following steps:
 
 
 # Future Improvements
+There is always room for improvement in mostly anything. I could point out reasons to why these features have been left out in the current state of this project but I feel that would be irrelevant. Whether it was because I ran out of time to make it before deadline or simply because I do not have the technical knowledge yet, it does not really matter why ceratain features did not make it in this iteration. What does matter though is knowing where improvements can be made and to bring them into development in the next iteration. Here is a list of future improvements I would like to add to this project to make it even better: 
 
+- Alert messages
+    - Add *more detailed* alert messages confirming user interactions
+        - Create Reservation confirmed
+        - Edit Reservation confirmed
+        - Delete Reservation confirmed
+        - Registration confirmed
+        - Log in/out confirmed
+- Optional comment
+    - Give users the ability to add an optional comment when making a reservation
+- Permissions
+    - Prohibit users from being able to access other users reservations made. Although not presented to the user in the projects current state, a user *could* manipulate the booking id in the url field of the browser to read and update someone elses reservation. 
+- No double booking
+    - Prevent a user from being able to double book the same date and time as an already registered reservation. 
+- Datepicker
+    - To further enhance the UX of the reservation form, implement a datepicker calendar dropdown. 
+- Customize forms
+    - To further enhance the UX of the forms, add custom more CSS to them. 
+- Hide register account button
+    - Hide register account if logged in. 
 
 
 # References
